@@ -20,6 +20,10 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  animation-name: sunmotion;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes cycleskycolors {
@@ -41,5 +45,27 @@ body {
   }
   100% {
     background-color: black;
+  }
+}
+
+@keyframes sunmotion {
+  0% {
+    transform: translate(-200px, 200px);
+    background: #d35400;
+  }
+  25% {
+    transform: translate(165px, 0px);
+    background: #f1c40f;
+  }
+  50% {
+    transform: translate(430px, -50px);
+  }
+  75% {
+    transform: translate(705px, 0px);
+    background: #f1c40f;
+  }
+  100% {
+    transform: translate(960px, 200px);
+    background: #e74c3c;
   }
 }
